@@ -15,7 +15,7 @@ This Morphe and Revanced builder creates both APKs and [Magisk](https://github.c
 ### Root users
 - Download the ZIP files you want to flash from the [releases page](https://github.com/sixstrings/morphe-revanced-builder/releases/latest).
   
-- Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YouTube Music from the Play Store.
+- Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) (recommended) to detach YouTube and YouTube Music from the Play Store.
 
 
 
