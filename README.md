@@ -27,11 +27,11 @@ This Morphe and Revanced builder creates both APKs and [Magisk](https://github.c
 ## Building Locally
 ### On Termux
 ```bash
-bash <(curl -sSf https://raw.githubusercontent.com/peternmuller/revanced-morphe-builder/main/build-termux.sh)
+bash <(curl -sSf https://raw.githubusercontent.com/sixstrings/morphe-revanced-builder/main/build-termux.sh)
 ```
 ### On Desktop
 ```bash
-git clone https://github.com/peternmuller/revanced-morphe-builder
+git clone https://github.com/sixstrings/morphe-revanced-builder
 cd revanced-morphe-builder
 ./build.sh
 ```
@@ -43,7 +43,7 @@ cd revanced-morphe-builder
 - [peternmuller](https://github.com/peternmuller/revanced-morphe-builder) for the fork.
 
 ## License
-    Copyright (C) 2024-2026  Peter Noël Muller
+    Copyright (C) 2024-2026 
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
