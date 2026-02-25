@@ -10,7 +10,7 @@ build-mode = "both"
 rv-brand = "Revanced"
 
 [YT-Music]
-app-name = "YT-Music"
+app-name = "YT Music"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 arch = "arm64-v8a"
