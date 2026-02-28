@@ -107,7 +107,7 @@ jobs:
           file_pattern: build.md *-update.json
           commit_message: Bump version ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
           commit_options: '--signoff'
-          commit_author: peternmuller <pm563838@gmail.com>
+          commit_author: sixstrings 
 
       - name: Report to Telegram
         env:
@@ -116,7 +116,7 @@ jobs:
         run: |
           cd build || { echo "build folder not found"; exit 1; }
 
-          TG_CHAT="@PeterSpaceXiaomi"
+          TG_CHAT="@morphe_modules"
           NL=$'\n'
           APKS=""
           MODULES=""
@@ -143,10 +143,10 @@ jobs:
           *APKs:*
           ${APKS}
 
-          *By @peternoz*
+          *By @holger*
 
           *🌟 Check out my builder source:*
-          https://github.com/peternmuller/revanced-morphe-builder
+          https://github.com/sixstrings/morphe-revanced-builder
           "
           echo "'$MSG'"
           MSG=${MSG:0:9450}
