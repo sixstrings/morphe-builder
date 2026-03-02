@@ -32,7 +32,7 @@ bash <(curl -sSf https://raw.githubusercontent.com/sixstrings/morphe-revanced-bu
 ### On Desktop
 ```bash
 git clone https://github.com/sixstrings/morphe-revanced-builder
-cd morphe-revancef-builder
+cd morphe-revanced-builder
 ./build.sh
 ```
 
