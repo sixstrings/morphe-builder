@@ -146,7 +146,7 @@ jobs:
           *By @peternoz*
 
           *🌟 Check out my builder source:*
-          https://github.com/peternmuller/revanced-morphe-builder
+          https://github.com/sixstrings/morphe-revanced-builder
           "
           echo "'$MSG'"
           MSG=${MSG:0:9450}
