@@ -2,6 +2,7 @@ enable-module-update = true
 
 # ReVanced
 [YouTube]
+enabled = false
 app-name = "YouTube"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
@@ -10,6 +11,7 @@ build-mode = "both"
 rv-brand = "Revanced"
 
 [YT-Music]
+enabled = false
 app-name = "YT-Music"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
