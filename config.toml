@@ -1,4 +1,5 @@
 enable-module-update = true
+parallel-jobs = 1
 
 
 # ReVanced
@@ -32,6 +33,7 @@ build-mode = "both"
 app-name = "YT Music"
 direct-dlurl = "https://github.com/peternmuller/YTYTM-APK/releases/download/1/com.google.android.apps.youtube.music-8.44.54-arm64-v8a.apk"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
+uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
