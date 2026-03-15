@@ -66,7 +66,7 @@ jobs:
           body: ${{ steps.get_output.outputs.BUILD_LOG }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ./build/*
-          release_name: ReVanced/Morphe
+          release_name: Morphe/Revanced
           tag: ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
           file_glob: true
           overwrite: true
@@ -107,7 +107,7 @@ jobs:
           file_pattern: build.md *-update.json
           commit_message: Bump version ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
           commit_options: '--signoff'
-          commit_author: peternmuller <pm563838@gmail.com>
+          commit_author: sixstrings 
 
       - name: Report to Telegram
         env:
@@ -116,7 +116,7 @@ jobs:
         run: |
           cd build || { echo "build folder not found"; exit 1; }
 
-          TG_CHAT="@PeterSpaceXiaomi"
+          TG_CHAT="@Morphe_Modules"
           NL=$'\n'
           APKS=""
           MODULES=""
@@ -143,7 +143,7 @@ jobs:
           *APKs:*
           ${APKS}
 
-          *By @peternoz*
+          *By @holguitar*
 
           *🌟 Check out my builder source:*
           https://github.com/peternmuller/revanced-morphe-builder
