@@ -1,6 +1,6 @@
 {
-  "version": "20.14.43 (patches 5.50.2.rvp)",
-  "versionCode": 13,
-  "zipUrl": "https://github.com/sixstrings/morphe-revanced-builder/releases/download/13/youtube-revanced-module-v20.14.43-all.zip",
+  "version": "20.40.45 (patches 6.0.0.rvp)",
+  "versionCode": 23,
+  "zipUrl": "https://github.com/sixstrings/morphe-revanced-builder/releases/download/23/youtube-revanced-module-v20.40.45-all.zip",
   "changelog": "https://raw.githubusercontent.com/sixstrings/morphe-revanced-builder/update/build.md"
 }
