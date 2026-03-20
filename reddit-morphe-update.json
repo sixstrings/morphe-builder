@@ -1,6 +1,6 @@
 {
-  "version": "2026.04.0 (patches 1.19.0.mpp)",
-  "versionCode": 26,
-  "zipUrl": "https://github.com/sixstrings/morphe-revanced-builder/releases/download/26/reddit-morphe-module-v2026.04.0-all.zip",
+  "version": "2026.04.0 (patches 1.20.0.mpp)",
+  "versionCode": 28,
+  "zipUrl": "https://github.com/sixstrings/morphe-revanced-builder/releases/download/28/reddit-morphe-module-v2026.04.0-all.zip",
   "changelog": "https://raw.githubusercontent.com/sixstrings/morphe-revanced-builder/update/build.md"
 }
