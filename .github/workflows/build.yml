@@ -116,7 +116,7 @@ jobs:
         run: |
           cd build || { echo "build folder not found"; exit 1; }
 
-          TG_CHAT="@Morphe_Modules"
+          TG_CHAT="@morphe_modules"
           NL=$'\n'
           APKS=""
           MODULES=""
@@ -143,8 +143,7 @@ jobs:
           *APKs:*
           ${APKS}
 
-          *By @holguitar*
-
+        
           *🌟 Check out my builder source:*
           https://github.com/sixstrings/morphe-revanced-builder
           "
