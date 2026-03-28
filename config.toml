@@ -1,4 +1,4 @@
-enable-module-update = true
+enable-module-update = false
 parallel-jobs = 1
 
 # ReVanced
