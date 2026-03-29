@@ -19,7 +19,7 @@ This Morphe and Revanced builder creates [Magisk](https://github.com/topjohnwu/M
 
 
 
-## If you are having trouble with the classic mount method of the modules and get errors like:
+### If you are having trouble with the classic mount method of the modules and get errors like:
 - **"Reflash needed"** error after reboots
 - **"Suspicious mount detected"** warnings from root detector apps you can consider using
 - [rvmm-zygisk-mount](https://github.com/j-hc/rvmm-zygisk-mount)
