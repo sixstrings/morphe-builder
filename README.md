@@ -12,7 +12,7 @@ This Morphe and Revanced builder creates [Magisk](https://github.com/topjohnwu/M
 - Install [Morphe MicroG-RE](https://github.com/MorpheApp/MicroG-RE/releases).
 - Download the APK files you want to install from the [releases page](https://github.com/sixstrings/morphe-revanced-builder/releases/latest).
 
-### Install and update APKs with Obtanium:
+### Install and update APKs with Obtainium:
 You can easily handle your apps by using [Obtainium](https://github.com/ImranR98/Obtainium) which lets you install and update apps directly from the source and receive notifications when new releases are available.
 
 - Install latest [Obtainium](https://github.com/ImranR98/Obtainium).
