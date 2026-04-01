@@ -3,23 +3,29 @@
 [![GitHub License](https://img.shields.io/github/license/sixstrings/morphe-revanced-builder?logo=gnu&label=License&link=https%3A%2F%2Fgithub.com%2Fsixstrings%2Fmorphe-revanced-builder%2Fblob%2Fmain%2FLICENSE)](https://github.com/sixstrings/morphe-revanced-builder/blob/main/LICENSE)
 [![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/sixstrings/morphe-revanced-builder/total?logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ij48cGF0aCBkPSJNNC43NSAxNy4yNWEuNzUuNzUgMCAwIDEgLjc1Ljc1djIuMjVjMCAuMTM4LjExMi4yNS4yNS4yNWgxMi41YS4yNS4yNSAwIDAgMCAuMjUtLjI1VjE4YS43NS43NSAwIDAgMSAxLjUgMHYyLjI1QTEuNzUgMS43NSAwIDAgMSAxOC4yNSAyMkg1Ljc1QTEuNzUgMS43NSAwIDAgMSA0IDIwLjI1VjE4YS43NS43NSAwIDAgMSAuNzUtLjc1WiIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPjxwYXRoIGQ9Ik01LjIyIDkuOTdhLjc0OS43NDkgMCAwIDEgMS4wNiAwbDQuOTcgNC45NjlWMi43NWEuNzUuNzUgMCAwIDEgMS41IDB2MTIuMTg5bDQuOTctNC45NjlhLjc0OS43NDkgMCAxIDEgMS4wNiAxLjA2bC02LjI1IDYuMjVhLjc0OS43NDkgMCAwIDEtMS4wNiAwbC02LjI1LTYuMjVhLjc0OS43NDkgMCAwIDEgMC0xLjA2WiIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPjwvc3ZnPg==&label=Downloads&link=https%3A%2F%2Fgithub.com%2Fsixstrings%2Fmorphe-revanced-builder%2Freleases)](https://github.com/sixstrings/morphe-revanced-builder/releases)
 
-This Morphe and Revanced builder creates [Magisk](https://github.com/topjohnwu/Magisk)/[KernelSU](https://github.com/tiann/KernelSU) modules and also APKs for [ReVanced](https://github.com/revanced) and [Morphe](https://github.com/MorpheApp) versions of YouTube and YouTube Music.
+This Morphe and Revanced builder creates [Magisk](https://github.com/topjohnwu/Magisk)/[KernelSU](https://github.com/tiann/KernelSU) modules and also APKs for [ReVanced](https://github.com/revanced) and [Morphe](https://github.com/MorpheApp) versions of YouTube, YouTube Music and Reddit.
 
 #### **Get the latest CI release [here](https://github.com/sixstrings/morphe-revanced-builder/releases/latest).**
 
 ## Installation
 ### Non-root users
-- Install [ReVanced GmsCore](https://github.com/ReVanced/GmsCore/releases/latest) or [Morphe MicroG-RE](https://github.com/MorpheApp/MicroG-RE/releases).
+- Install [Morphe MicroG-RE](https://github.com/MorpheApp/MicroG-RE/releases).
 - Download the APK files you want to install from the [releases page](https://github.com/sixstrings/morphe-revanced-builder/releases/latest).
+
+### Install and update APKs with Obtanium:
+You can easily handle your apps by using [Obtainium](https://github.com/ImranR98/Obtainium) which lets you install and update apps directly from the source and receive notifications when new releases are available.
+
+- Install latest [Obtainium](https://github.com/ImranR98/Obtainium).
+- Import this [obtanium-config.json](https://xdaforums.com/attachments/obtainium-config-json.6332117/) to it.
+- Install/update your APKs.
 
 ### Root users
 - Download the ZIP files you want to flash from the [releases page](https://github.com/sixstrings/morphe-revanced-builder/releases/latest).
   
-- Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YouTube Music from the Play Store.
+- Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube, YouTube Music and others from the Play Store.
 
 
-
-### If you are having trouble with the classic mount method of the modules and get errors like:
+#### If you are having trouble with the classic mount method of the modules and get errors like:
 - **"Reflash needed"** error after reboots
 - **"Suspicious mount detected"** warnings from root detector apps you can consider using
 - [rvmm-zygisk-mount](https://github.com/j-hc/rvmm-zygisk-mount)
@@ -38,7 +44,8 @@ cd morphe-revanced-builder
 
 ## Credits
 - [j-hc](https://github.com/j-hc) for creating this builder, for zygisk-detach and rvmm-zygisk-mount.
-- Of course the [Morphe](https://github.com/MorpheApp) team for the amazing Morphe app and patches.
+- Of course the [Morphe](https://github.com/MorpheApp) team for their amazing Morphe-patches.
+- [ImranR98](https://github.com/ImranR98) for Obtainium.
 - The [ReVanced](https://github.com/ReVanced) team for Revanced app.
 - [peternmuller](https://github.com/peternmuller/revanced-morphe-builder) for the fork.
 
