@@ -16,7 +16,7 @@ This Morphe and Revanced builder creates [Magisk](https://github.com/topjohnwu/M
 You can easily handle your apps by using [Obtainium](https://github.com/ImranR98/Obtainium) which lets you install and update apps directly from the source and receive notifications when new releases are available.
 
 - Install latest [Obtainium](https://github.com/ImranR98/Obtainium).
-- Import this [obtanium-config.json](https://xdaforums.com/attachments/obtainium-config-json.6332117/) to it.
+- Import this [obtanium-config.json](https://github.com/sixstrings/morphe-revanced-builder/releases/tag/34) to it.
 - Install/update your APKs.
 
 ### Root users
