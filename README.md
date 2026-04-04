@@ -1,4 +1,4 @@
-# Extensive Morphe & Revanced Builder
+# Extensive Morphe Builder
 [![CI](https://github.com/sixstrings/morphe-revanced-builder/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/sixstrings/morphe-revanced-builder/actions/workflows/ci.yml)
 [![GitHub License](https://img.shields.io/github/license/sixstrings/morphe-revanced-builder?logo=gnu&label=License&link=https%3A%2F%2Fgithub.com%2Fsixstrings%2Fmorphe-revanced-builder%2Fblob%2Fmain%2FLICENSE)](https://github.com/sixstrings/morphe-revanced-builder/blob/main/LICENSE)
 [![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/sixstrings/morphe-revanced-builder/total?logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ij48cGF0aCBkPSJNNC43NSAxNy4yNWEuNzUuNzUgMCAwIDEgLjc1Ljc1djIuMjVjMCAuMTM4LjExMi4yNS4yNS4yNWgxMi41YS4yNS4yNSAwIDAgMCAuMjUtLjI1VjE4YS43NS43NSAwIDAgMSAxLjUgMHYyLjI1QTEuNzUgMS43NSAwIDAgMSAxOC4yNSAyMkg1Ljc1QTEuNzUgMS43NSAwIDAgMSA0IDIwLjI1VjE4YS43NS43NSAwIDAgMSAuNzUtLjc1WiIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPjxwYXRoIGQ9Ik01LjIyIDkuOTdhLjc0OS43NDkgMCAwIDEgMS4wNiAwbDQuOTcgNC45NjlWMi43NWEuNzUuNzUgMCAwIDEgMS41IDB2MTIuMTg5bDQuOTctNC45NjlhLjc0OS43NDkgMCAxIDEgMS4wNiAxLjA2bC02LjI1IDYuMjVhLjc0OS43NDkgMCAwIDEtMS4wNiAwbC02LjI1LTYuMjVhLjc0OS43NDkgMCAwIDEgMC0xLjA2WiIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPjwvc3ZnPg==&label=Downloads&link=https%3A%2F%2Fgithub.com%2Fsixstrings%2Fmorphe-revanced-builder%2Freleases)](https://github.com/sixstrings/morphe-revanced-builder/releases)
@@ -12,12 +12,14 @@ This Morphe and Revanced builder creates [Magisk](https://github.com/topjohnwu/M
 - Install [Morphe MicroG-RE](https://github.com/MorpheApp/MicroG-RE/releases).
 - Download the APK files you want to install from the [releases page](https://github.com/sixstrings/morphe-revanced-builder/releases/latest).
 
-### Install and update APKs with Obtainium:
-You can easily handle your apps by using [Obtainium](https://github.com/ImranR98/Obtainium) which lets you install and update apps directly from the source and receive notifications when new releases are available.
+### Install and update APKs with Obtainium
 
-- Install latest [Obtainium](https://github.com/ImranR98/Obtainium).
-- Import this [obtanium-config.json](https://github.com/sixstrings/morphe-revanced-builder/releases/tag/34) to it.
-- Install/update your APKs.
+Use [Obtainium](https://github.com/ImranR98/Obtainium) to install and update APKs directly from the source and get notified when new versions are released.
+A configuration file is provided for quick and easy setup.
+
+- Install the latest [Obtainium](https://github.com/ImranR98/Obtainium) version.
+- Import [obtanium-config.json](https://github.com/sixstrings/morphe-revanced-builder/releases/tag/34).
+- Install or update your APKs.
 
 ### Root users
 - Download the ZIP files you want to flash from the [releases page](https://github.com/sixstrings/morphe-revanced-builder/releases/latest).
