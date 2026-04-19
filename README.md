@@ -1,16 +1,16 @@
 # Extensive Morphe Builder
-[![CI](https://github.com/sixstrings/morphe-revanced-builder/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/sixstrings/morphe-revanced-builder/actions/workflows/ci.yml)
-[![GitHub License](https://img.shields.io/github/license/sixstrings/morphe-revanced-builder?logo=gnu&label=License&link=https%3A%2F%2Fgithub.com%2Fsixstrings%2Fmorphe-revanced-builder%2Fblob%2Fmain%2FLICENSE)](https://github.com/sixstrings/morphe-revanced-builder/blob/main/LICENSE)
-[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/sixstrings/morphe-revanced-builder/total?logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ij48cGF0aCBkPSJNNC43NSAxNy4yNWEuNzUuNzUgMCAwIDEgLjc1Ljc1djIuMjVjMCAuMTM4LjExMi4yNS4yNS4yNWgxMi41YS4yNS4yNSAwIDAgMCAuMjUtLjI1VjE4YS43NS43NSAwIDAgMSAxLjUgMHYyLjI1QTEuNzUgMS43NSAwIDAgMSAxOC4yNSAyMkg1Ljc1QTEuNzUgMS43NSAwIDAgMSA0IDIwLjI1VjE4YS43NS43NSAwIDAgMSAuNzUtLjc1WiIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPjxwYXRoIGQ9Ik01LjIyIDkuOTdhLjc0OS43NDkgMCAwIDEgMS4wNiAwbDQuOTcgNC45NjlWMi43NWEuNzUuNzUgMCAwIDEgMS41IDB2MTIuMTg5bDQuOTctNC45NjlhLjc0OS43NDkgMCAxIDEgMS4wNiAxLjA2bC02LjI1IDYuMjVhLjc0OS43NDkgMCAwIDEtMS4wNiAwbC02LjI1LTYuMjVhLjc0OS43NDkgMCAwIDEgMC0xLjA2WiIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPjwvc3ZnPg==&label=Downloads&link=https%3A%2F%2Fgithub.com%2Fsixstrings%2Fmorphe-revanced-builder%2Freleases)](https://github.com/sixstrings/morphe-revanced-builder/releases)
+[![CI](https://github.com/sixstrings/morphe-builder/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/sixstrings/morphe-builder/actions/workflows/ci.yml)
+[![GitHub License](https://img.shields.io/github/license/sixstrings/morphe-builder?logo=gnu&label=License&link=https%3A%2F%2Fgithub.com%2Fsixstrings%2Fmorphe-builder%2Fblob%2Fmain%2FLICENSE)](https://github.com/sixstrings/morphe-builder/blob/main/LICENSE)
+[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/sixstrings/morphe-builder/total?logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ij48cGF0aCBkPSJNNC43NSAxNy4yNWEuNzUuNzUgMCAwIDEgLjc1Ljc1djIuMjVjMCAuMTM4LjExMi4yNS4yNS4yNWgxMi41YS4yNS4yNSAwIDAgMCAuMjUtLjI1VjE4YS43NS43NSAwIDAgMSAxLjUgMHYyLjI1QTEuNzUgMS43NSAwIDAgMSAxOC4yNSAyMkg1Ljc1QTEuNzUgMS43NSAwIDAgMSA0IDIwLjI1VjE4YS43NS43NSAwIDAgMSAuNzUtLjc1WiIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPjxwYXRoIGQ9Ik01LjIyIDkuOTdhLjc0OS43NDkgMCAwIDEgMS4wNiAwbDQuOTcgNC45NjlWMi43NWEuNzUuNzUgMCAwIDEgMS41IDB2MTIuMTg5bDQuOTctNC45NjlhLjc0OS43NDkgMCAxIDEgMS4wNiAxLjA2bC02LjI1IDYuMjVhLjc0OS43NDkgMCAwIDEtMS4wNiAwbC02LjI1LTYuMjVhLjc0OS43NDkgMCAwIDEgMC0xLjA2WiIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPjwvc3ZnPg==&label=Downloads&link=https%3A%2F%2Fgithub.com%2Fsixstrings%2Fmorphe-revanced-builder%2Freleases)](https://github.com/sixstrings/morphe-builder/releases)
 
-This Morphe and Revanced builder creates [Magisk](https://github.com/topjohnwu/Magisk)/[KernelSU](https://github.com/tiann/KernelSU) modules and also APKs for [Revanced](https://github.com/revanced) and [Morphe](https://github.com/MorpheApp) versions of YouTube, YouTube Music and Reddit.
+This Morphe builder creates [Magisk](https://github.com/topjohnwu/Magisk)/[KernelSU](https://github.com/tiann/KernelSU) modules and also APKs for [Morphe](https://github.com/MorpheApp) versions of YouTube, YouTube Music and Reddit.
 
-#### **Get the latest CI release [here](https://github.com/sixstrings/morphe-revanced-builder/releases/latest).**
+#### **Get the latest CI release [here](https://github.com/sixstrings/morphe-builder/releases/latest).**
 
 ## Installation
 ### Non-root users
 - Install [Morphe MicroG-RE](https://github.com/MorpheApp/MicroG-RE/releases).
-- Download the APK files you want to install from the [releases page](https://github.com/sixstrings/morphe-revanced-builder/releases/latest).
+- Download the APK files you want to install from the [releases page](https://github.com/sixstrings/morphe-builder/releases/latest).
 
 ### Install and update APKs with Obtainium
 
@@ -18,11 +18,11 @@ Use [Obtainium](https://github.com/ImranR98/Obtainium) to install and update APK
 A configuration file is provided for quick and easy setup.
 
 - Install the latest [Obtainium](https://github.com/ImranR98/Obtainium) version.
-- Import [obtanium-config.json](https://github.com/sixstrings/morphe-revanced-builder/releases/tag/34).
+- Import [obtanium-config.json](https://github.com/sixstrings/morphe-builder/releases/tag/34).
 - Install or update your APKs.
 
 ### Root users
-- Download the ZIP files you want to flash from the [releases page](https://github.com/sixstrings/morphe-revanced-builder/releases/latest).
+- Download the ZIP files you want to flash from the [releases page](https://github.com/sixstrings/morphe-builder/releases/latest).
   
 - Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube, YouTube Music and other apps from the Play Store.
 
@@ -30,11 +30,11 @@ A configuration file is provided for quick and easy setup.
 ## Building Locally
 ### On Termux
 ```bash
-bash <(curl -sSf https://raw.githubusercontent.com/sixstrings/morphe-revanced-builder/main/build-termux.sh)
+bash <(curl -sSf https://raw.githubusercontent.com/sixstrings/morphe-builder/main/build-termux.sh)
 ```
 ### On Desktop
 ```bash
-git clone https://github.com/sixstrings/morphe-revanced-builder
+git clone https://github.com/sixstrings/morphe-builder
 cd morphe-revanced-builder
 ./build.sh
 ```
@@ -43,11 +43,10 @@ cd morphe-revanced-builder
 - [j-hc](https://github.com/j-hc) for creating this builder and for zygisk-detach.
 - Of course the [Morphe](https://github.com/MorpheApp) team for their amazing Morphe-patches.
 - [ImranR98](https://github.com/ImranR98) for Obtainium.
-- The [ReVanced](https://github.com/Revanced) team for Revanced app.
 - [peternmuller](https://github.com/peternmuller/revanced-morphe-builder) for the fork.
 
 ## License
-    Copyright (C) 2024-2026 Holger Richard
+    Copyright (C) 2024-2026 Holger Richard S.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
