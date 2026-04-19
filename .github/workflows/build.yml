@@ -123,7 +123,7 @@ jobs:
         run: |
           cd build || { echo "build folder not found"; exit 1; }
 
-          TG_CHAT="@PeterSpaceXiaomi"
+          TG_CHAT="@morphe-revanced-apks"
           NL=$'\n'
           APKS=""
           MODULES=""
