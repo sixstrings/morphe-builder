@@ -12,7 +12,7 @@ on:
 jobs:
   run:
     permissions: write-all
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-java@v5
         with:
@@ -110,7 +110,7 @@ jobs:
           git add build.md *-update.json
       
           if ! git diff --cached --quiet; then
-            git commit -s -m "Bump version ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}"
+            git commit -m "Bump version ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}"
             git push origin HEAD:update
           else
             echo "no changes!"
@@ -123,37 +123,32 @@ jobs:
         run: |
           cd build || { echo "build folder not found"; exit 1; }
 
-          TG_CHAT="@morphe-revanced-apks"
+          TG_CHAT="@morphe-modules-apks"
           NL=$'\n'
           APKS=""
           MODULES=""
           for OUTPUT in *; do
             DL_URL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}/${OUTPUT}"
             if [[ $OUTPUT = *.apk ]]; then
-              APKS+="${NL}📦 [${OUTPUT}](${DL_URL})"
+              APKS+="${NL}📦[${OUTPUT}](${DL_URL})"
             elif [[ $OUTPUT = *.zip ]]; then
-              MODULES+="${NL}📦 [${OUTPUT}](${DL_URL})"
+              MODULES+="${NL}📦[${OUTPUT}](${DL_URL})"
             fi
           done
           MODULES=${MODULES#"$NL"}
           APKS=${APKS#"$NL"}
 
           BODY="$(sed 's/^\* \*\*/↪ \*\*/g; s/^\* `/↪ \*\*/g; s/`/\*/g; s/^\* /\↪/g; s/\*\*/\*/g; s/###//g; s/^- /↪ /g; /^==/d;' ../build.md)"
-          MSG="*New Build Released! 🎉*
+          MSG="*New build!*
 
           ${BODY}
 
           *▼ Download Links:*
-          *Modules:*
+          Modules:
           ${MODULES}
 
-          *APKs:*
+          APKs:
           ${APKS}
-
-          *By @peternoz*
-
-          *🌟 Check out my builder source:*
-          https://github.com/peternmuller/revanced-morphe-builder
           "
           echo "'$MSG'"
           MSG=${MSG:0:9450}
