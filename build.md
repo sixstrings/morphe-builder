@@ -1,5 +1,4 @@
-YT-Music-Morphe (arm64-v8a): 8.47.56  
-YT-Music-Morphe (arm-v7a): 8.47.56  
+YT-Music-Morphe: 8.47.56  
 YouTube-Morphe: 20.47.62  
 
 Install [ReVanced GmsCore](https://github.com/ReVanced/GmsCore/releases/latest) or [Morphe MicroG-RE](https://github.com/MorpheApp/MicroG-RE/releases/latest) for non-root YouTube and YouTube Music APKs  
