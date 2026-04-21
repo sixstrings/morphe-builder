@@ -49,7 +49,6 @@ arch = "arm64-v8a"
 build-mode = "both"
 
 [Reddit-Morphe]
-enabled = false
 app-name = "Reddit"
 rv-brand = "Morphe"
 build-mode = "both"
