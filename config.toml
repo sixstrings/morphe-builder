@@ -29,6 +29,7 @@ archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.a
 [YouTube-Morphe]
 app-name = "YouTube"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+direct-dlurl = "https://github.com/peternmuller/YTYTM-APK/releases/download/1/com.google.android.youtube-20.47.62-all.apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 patches-source = "MorpheApp/morphe-patches"
@@ -39,6 +40,7 @@ build-mode = "both"
 [YT-Music-Morphe]
 app-name = "YT Music"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
+direct-dlurl = "https://github.com/peternmuller/YTYTM-APK/releases/download/1/com.google.android.apps.youtube.music-8.47.56-arm64-v8a.apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
