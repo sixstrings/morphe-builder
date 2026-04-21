@@ -1,3 +1,4 @@
+Reddit-Morphe: 2026.10.0  
 YT-Music-Morphe: 8.47.56  
 YouTube-Morphe: 20.47.62  
 
