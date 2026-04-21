@@ -67,10 +67,10 @@ jobs:
           BODY: ${{ steps.get_output.outputs.BUILD_LOG }}
         run: |
           if gh release view "$TAG" >/dev/null 2>&1; then
-            gh release edit "$TAG" --title "Release" --notes "$BODY"
+            gh release edit "$TAG" --title "Morphe" --notes "$BODY"
             gh release upload "$TAG" ./build/* --clobber
           else
-            gh release create "$TAG" ./build/* --title "Release" --notes "$BODY"
+            gh release create "$TAG" ./build/* --title "Morphe" --notes "$BODY"
           fi
 
       - name: Update modules changelog and update json
@@ -123,7 +123,7 @@ jobs:
         run: |
           cd build || { echo "build folder not found"; exit 1; }
 
-          TG_CHAT="@PeterSpaceXiaomi"
+          TG_CHAT="@morphe-modules-apks"
           NL=$'\n'
           APKS=""
           MODULES=""
@@ -150,10 +150,10 @@ jobs:
           *APKs:*
           ${APKS}
 
-          *By @peternoz*
+  
 
           *🌟 Check out my builder source:*
-          https://github.com/peternmuller/revanced-morphe-builder
+          https://github.com/sixstrings/morphe-builder
           "
           echo "'$MSG'"
           MSG=${MSG:0:9450}
