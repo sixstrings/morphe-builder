@@ -18,7 +18,7 @@ Use [Obtainium](https://github.com/ImranR98/Obtainium) to install and update APK
 A configuration file is provided for quick and easy setup.
 
 - Install the latest [Obtainium](https://github.com/ImranR98/Obtainium) version.
-- Import [obtanium-config.json](https://github.com/sixstrings/morphe-builder/releases/tag/34).
+- Import [obtanium-sixstrings-config.json](https://github.com/sixstrings/morphe-builder/releases/tag/34).
 - Install or update your APKs.
 
 ### Root users
