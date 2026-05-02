@@ -18,7 +18,7 @@ Use [Obtainium](https://github.com/ImranR98/Obtainium) to install and update APK
 A configuration file is provided for quick and easy setup.
 
 - Install the latest [Obtainium](https://github.com/ImranR98/Obtainium) version.
-- Import [obtanium-sixstrings-config.json](https://github.com/sixstrings/morphe-builder/releases/tag/34).
+- Import [obtanium-sixstrings-config.json](https://xdaforums.com/attachments/obtainium-sixstrings-config-json.6342022/?hash=50c4f2b0596df8194076054649dba330).
 - Install or update your APKs.
 
 ### Root users
@@ -41,7 +41,7 @@ cd morphe-revanced-builder
 
 ## Credits
 - [j-hc](https://github.com/j-hc) for creating this builder and for zygisk-detach.
-- Of course the [Morphe](https://github.com/MorpheApp) team for their amazing Morphe-patches.
+- [Morphe](https://github.com/MorpheApp) team for their amazing Morphe-patches.
 - [ImranR98](https://github.com/ImranR98) for Obtainium.
 - [peternmuller](https://github.com/peternmuller/revanced-morphe-builder) for the fork.
 
