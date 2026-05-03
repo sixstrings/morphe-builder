@@ -1,0 +1,19 @@
+name: Telegram Release Notification
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send Telegram message
+        run: |
+          MESSAGE="🚀 New Release published\n\n📦 Version: ${{ github.event.release.tag_name }}\n📝 Titel: ${{ github.event.release.name }}\n🔗 Repo: ${{ github.repository }}"
+
+          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage" \
+            -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
+            -d text="$MESSAGE" \
+            -d parse_mode="Markdown"
