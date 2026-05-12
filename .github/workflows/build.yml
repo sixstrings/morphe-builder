@@ -118,12 +118,12 @@ jobs:
 
       - name: Report to Telegram
         env:
-          TG_TOKEN: ${{ secrets.TG_TOKEN }}
-        if: env.TG_TOKEN != null
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+        if: env.TELEGRAM_TOKEN != null
         run: |
           cd build || { echo "build folder not found"; exit 1; }
 
-          TG_CHAT="@morphe-modules-apks"
+          TG_CHAT="-1003721693197"
           NL=$'\n'
           APKS=""
           MODULES=""
@@ -157,5 +157,5 @@ jobs:
           "
           echo "'$MSG'"
           MSG=${MSG:0:9450}
-          POST="https://api.telegram.org/bot${TG_TOKEN}/sendMessage"
+          POST="https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage"
           curl -X POST --data-urlencode "parse_mode=Markdown" --data-urlencode "disable_web_page_preview=true" --data-urlencode "text=${MSG}" --data-urlencode "chat_id=${TG_CHAT}" "$POST"
