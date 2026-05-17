@@ -16,5 +16,5 @@ jobs:
           MESSAGE="Test erfolgreich - GitHub zu Telegram Verbindung steht 🚀"
 
           curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage" \
-            -d chat_id=${{ secrets.TG_CHAT_TEST }} \
+            -d chat_id=${{ secrets.TG_CHAT_PROD }} \
             -d text="$MESSAGE"
