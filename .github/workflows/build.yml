@@ -120,7 +120,7 @@ jobs:
       - name: Report to Telegram
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-          TG_CHAT: ${{ secrets.TG_CHAT_TEST_PROD }}
+          TG_CHAT: ${{ secrets.TG_CHAT_PROD }}
         run: |
           set -euo pipefail
 
