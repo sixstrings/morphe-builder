@@ -116,46 +116,86 @@ jobs:
             echo "no changes!"
           fi
 
-      - name: Report to Telegram
+    
+      - name: Report to Telegram (TEST MODE)
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-        if: env.TELEGRAM_TOKEN != null
         run: |
-          cd build || { echo "build folder not found"; exit 1; }
+          set -euo pipefail
 
-          TG_CHAT="-1003721693197"
-          NL=$'\n'
+          # =========================
+          # 🔧 TEST CHAT ID HIER EINTRAGEN
+          # =========================
+          TG_CHAT="-1003934832260"
+
+          echo "📡 Preparing Telegram test message..."
+
+          # Fake build data (keine echten Releases nötig)
+          mkdir -p build
+          cd build
+
+          touch app-debug.apk
+          touch example-module.zip
+
+          RELEASE_URL="https://example.com/test-release"
+
           APKS=""
           MODULES=""
+
+          shopt -s nullglob
+
           for OUTPUT in *; do
-            DL_URL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}/${OUTPUT}"
-            if [[ $OUTPUT = *.apk ]]; then
-              APKS+="${NL}📦 [${OUTPUT}](${DL_URL})"
-            elif [[ $OUTPUT = *.zip ]]; then
-              MODULES+="${NL}📦 [${OUTPUT}](${DL_URL})"
-            fi
+            [[ -f "$OUTPUT" ]] || continue
+
+            SIZE="$(du -h "$OUTPUT" | cut -f1)"
+            LINE="📦 [$OUTPUT]($RELEASE_URL/$OUTPUT) (${SIZE})"
+
+            case "$OUTPUT" in
+              *.apk)
+                APKS+=$'\n'"$LINE"
+                ;;
+              *.zip)
+                MODULES+=$'\n'"$LINE"
+                ;;
+            esac
           done
-          MODULES=${MODULES#"$NL"}
-          APKS=${APKS#"$NL"}
 
-          BODY="$(sed 's/^\* \*\*/↪ \*\*/g; s/^\* `/↪ \*\*/g; s/`/\*/g; s/^\* /\↪/g; s/\*\*/\*/g; s/###//g; s/^- /↪ /g; /^==/d;' ../build.md)"
-          MSG="*New Build Released! 💥*
+          APKS="${APKS#"$'\n'"}"
+          MODULES="${MODULES#"$'\n'"}"
 
+          BODY="↪ Test Run aktiv
+          ↪ Layout-Check für Telegram
+          ↪ Markdown Rendering Simulation"
+
+          MSG="🚀 *New Build Released (TEST)*
+
+          *📝 Release Notes*
           ${BODY}
 
-          *▼ Download Links:*
-          *Modules:*
-          ${MODULES}
+          *📥 Downloads*
 
-          *APKs:*
-          ${APKS}
+          🧩 *Modules*
+          ${MODULES:-None}
 
-  
+          📱 *APKs*
+          ${APKS:-None}
 
-          *🌟 Check out my builder source:*
-          https://github.com/sixstrings/morphe-builder
-          "
-          echo "'$MSG'"
-          MSG=${MSG:0:9450}
-          POST="https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage"
-          curl -X POST --data-urlencode "parse_mode=Markdown" --data-urlencode "disable_web_page_preview=true" --data-urlencode "text=${MSG}" --data-urlencode "chat_id=${TG_CHAT}" "$POST"
+          🔧 *Source*
+          https://github.com/sixstrings/morphe-builder"
+
+          # Telegram Limit Safety Net
+          MSG="${MSG:0:4000}"
+
+          echo "================ MESSAGE PREVIEW ================"
+          echo "$MSG"
+          echo "================================================="
+
+          curl --fail --silent --show-error \
+            -X POST \
+            --data-urlencode "chat_id=${TG_CHAT}" \
+            --data-urlencode "parse_mode=Markdown" \
+            --data-urlencode "disable_web_page_preview=true" \
+            --data-urlencode "text=${MSG}" \
+            "https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage"
+
+          echo "✅ Test message sent"
