@@ -8,3 +8,6 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach/releases/latest) to de
 CLI: MorpheApp/morphe-cli-1.8.1-all.jar  
 Patches: MorpheApp/patches-1.27.0.mpp  
 [Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.27.0)  
+
+Skipped:  
+Patches: MorpheApp/patches-1.27.0.mpp    
