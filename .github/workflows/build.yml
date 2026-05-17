@@ -118,12 +118,16 @@ jobs:
 
     
       - name: Report to Telegram
-        if: ${{ secrets.TELEGRAM_TOKEN != '' }}
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TG_CHAT: ${{ secrets.TG_CHAT_TEST }}
         run: |
           set -euo pipefail
+
+          if [[ -z "${TELEGRAM_TOKEN}" ]]; then
+            echo "❌ TELEGRAM_TOKEN not set"
+            exit 0
+          fi
 
           cd build || {
             echo "❌ build folder not found"
@@ -147,12 +151,8 @@ jobs:
             LINE="📦 [$OUTPUT]($DL_URL) (${SIZE})"
 
             case "$OUTPUT" in
-              *.apk)
-                APKS+=$'\n'"$LINE"
-                ;;
-              *.zip)
-                MODULES+=$'\n'"$LINE"
-                ;;
+              *.apk) APKS+=$'\n'"$LINE" ;;
+              *.zip) MODULES+=$'\n'"$LINE" ;;
             esac
           done
 
@@ -188,14 +188,18 @@ jobs:
           🔧 *Source*
           https://github.com/sixstrings/morphe-builder"
 
-          # Telegram hard limit
           MSG="${MSG:0:4000}"
-
-          echo "📨 Sending Telegram notification..."
 
           curl --fail --silent --show-error \
             -X POST \
             --data-urlencode "chat_id=${TG_CHAT}" \
+            --data-urlencode "parse_mode=Markdown" \
+            --data-urlencode "disable_web_page_preview=true" \
+            --data-urlencode "text=${MSG}" \
+            "https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage"
+
+          echo "✅ Telegram message sent"
+
             --data-urlencode "parse_mode=Markdown" \
             --data-urlencode "disable_web_page_preview=true" \
             --data-urlencode "text=${MSG}" \
