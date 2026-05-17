@@ -124,11 +124,6 @@ jobs:
         run: |
           set -euo pipefail
 
-          if [[ -z "${TELEGRAM_TOKEN}" ]]; then
-            echo "❌ TELEGRAM_TOKEN not set"
-            exit 0
-          fi
-
           cd build || {
             echo "❌ build folder not found"
             exit 1
@@ -151,26 +146,21 @@ jobs:
             LINE="📦 [$OUTPUT]($DL_URL) (${SIZE})"
 
             case "$OUTPUT" in
-              *.apk) APKS+=$'\n'"$LINE" ;;
-              *.zip) MODULES+=$'\n'"$LINE" ;;
+              *.apk)
+                APKS+=$'\n'"$LINE"
+                ;;
+              *.zip)
+                MODULES+=$'\n'"$LINE"
+                ;;
             esac
           done
 
           APKS="${APKS#"$'\n'"}"
           MODULES="${MODULES#"$'\n'"}"
 
-          BODY="$(
-            sed \
-              -e 's/^\* \*\*/↪ \*\*/g' \
-              -e 's/^\* `/↪ \*\*/g' \
-              -e 's/`/\*/g' \
-              -e 's/^\* /↪ /g' \
-              -e 's/\*\*/\*/g' \
-              -e 's/###//g' \
-              -e 's/^- /↪ /g' \
-              -e '/^==/d' \
-              ../build.md
-          )"
+          BODY="🚀 New Build Released
+          📝 Release Notes loaded
+          📥 Preparing downloads"
 
           MSG="🚀 *New Build Released*
 
@@ -190,20 +180,14 @@ jobs:
 
           MSG="${MSG:0:4000}"
 
-          curl --fail --silent --show-error \
-            -X POST \
+          curl -X POST "https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage" \
             --data-urlencode "chat_id=${TG_CHAT}" \
-            --data-urlencode "parse_mode=Markdown" \
-            --data-urlencode "disable_web_page_preview=true" \
             --data-urlencode "text=${MSG}" \
-            "https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage"
+            --data-urlencode "parse_mode=Markdown" \
+            --data-urlencode "disable_web_page_preview=true"
 
           echo "✅ Telegram message sent"
+          
 
-            --data-urlencode "parse_mode=Markdown" \
-            --data-urlencode "disable_web_page_preview=true" \
-            --data-urlencode "text=${MSG}" \
-            "https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage"
-
-          echo "✅ Telegram message sent"
+            
 
