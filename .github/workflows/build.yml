@@ -117,27 +117,21 @@ jobs:
           fi
 
     
-      - name: Report to Telegram (TEST MODE)
+      - name: Report to Telegram
+        if: ${{ secrets.TELEGRAM_TOKEN != '' }}
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TG_CHAT: ${{ secrets.TG_CHAT_TEST }}
         run: |
           set -euo pipefail
 
-          # =========================
-          # 🔧 TEST CHAT ID HIER EINTRAGEN
-          # =========================
-          TG_CHAT="-1003934832260"
+          cd build || {
+            echo "❌ build folder not found"
+            exit 1
+          }
 
-          echo "📡 Preparing Telegram test message..."
-
-          # Fake build data (keine echten Releases nötig)
-          mkdir -p build
-          cd build
-
-          touch app-debug.apk
-          touch example-module.zip
-
-          RELEASE_URL="https://example.com/test-release"
+          VERSION="${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}"
+          RELEASE_URL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/$VERSION"
 
           APKS=""
           MODULES=""
@@ -147,8 +141,10 @@ jobs:
           for OUTPUT in *; do
             [[ -f "$OUTPUT" ]] || continue
 
+            DL_URL="$RELEASE_URL/$OUTPUT"
             SIZE="$(du -h "$OUTPUT" | cut -f1)"
-            LINE="📦 [$OUTPUT]($RELEASE_URL/$OUTPUT) (${SIZE})"
+
+            LINE="📦 [$OUTPUT]($DL_URL) (${SIZE})"
 
             case "$OUTPUT" in
               *.apk)
@@ -163,11 +159,20 @@ jobs:
           APKS="${APKS#"$'\n'"}"
           MODULES="${MODULES#"$'\n'"}"
 
-          BODY="↪ Test Run aktiv
-          ↪ Layout-Check für Telegram
-          ↪ Markdown Rendering Simulation"
+          BODY="$(
+            sed \
+              -e 's/^\* \*\*/↪ \*\*/g' \
+              -e 's/^\* `/↪ \*\*/g' \
+              -e 's/`/\*/g' \
+              -e 's/^\* /↪ /g' \
+              -e 's/\*\*/\*/g' \
+              -e 's/###//g' \
+              -e 's/^- /↪ /g' \
+              -e '/^==/d' \
+              ../build.md
+          )"
 
-          MSG="🚀 *New Build Released (TEST)*
+          MSG="🚀 *New Build Released*
 
           *📝 Release Notes*
           ${BODY}
@@ -183,12 +188,10 @@ jobs:
           🔧 *Source*
           https://github.com/sixstrings/morphe-builder"
 
-          # Telegram Limit Safety Net
+          # Telegram hard limit
           MSG="${MSG:0:4000}"
 
-          echo "================ MESSAGE PREVIEW ================"
-          echo "$MSG"
-          echo "================================================="
+          echo "📨 Sending Telegram notification..."
 
           curl --fail --silent --show-error \
             -X POST \
@@ -198,4 +201,5 @@ jobs:
             --data-urlencode "text=${MSG}" \
             "https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage"
 
-          echo "✅ Test message sent"
+          echo "✅ Telegram message sent"
+
