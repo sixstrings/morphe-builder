@@ -158,9 +158,21 @@ jobs:
           APKS="${APKS#"$'\n'"}"
           MODULES="${MODULES#"$'\n'"}"
 
-          BODY="🚀 New Build Released
-          📝 Release Notes loaded
-          📥 Preparing downloads"
+          
+        
+          BODY="$(
+            sed \
+              -e 's/^\* \*\*/↪ \*\*/g' \
+              -e 's/^\* `/↪ \*\*/g' \
+              -e 's/`/\*/g' \
+              -e 's/^\* /↪ /g' \
+              -e 's/\*\*/\*/g' \
+              -e 's/###//g' \
+              -e 's/^- /↪ /g' \
+              -e '/^==/d' \
+              ../build.md
+          )"
+          
 
           MSG="🚀 *New Build Released*
 
