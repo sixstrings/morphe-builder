@@ -1,4 +1,6 @@
 Reddit-Morphe: 2026.14.0  
+YT-Music-Morphe: 9.15.51  
+YouTube-Morphe: 20.51.39  
 
 Install [Morphe MicroG-RE](https://github.com/MorpheApp/MicroG-RE/releases/latest) for non-root YouTube, YouTube Music and Reddit APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach/releases/latest) to detach YouTube and YouTube Music modules from the Play Store
