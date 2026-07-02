@@ -38,8 +38,8 @@ bash <(curl -sSf https://raw.githubusercontent.com/sixstrings/morphe-builder/mai
 ### On Desktop
 ```bash
 git clone https://github.com/sixstrings/morphe-builder --depth 1
-$ cd morphe-builder
-$ ./build.sh
+cd morphe-builder
+./build.sh
 ```
 
 ## Credits
