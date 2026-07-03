@@ -6,5 +6,5 @@ Install [Morphe MicroG-RE](https://github.com/MorpheApp/MicroG-RE/releases/lates
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach/releases/latest) to detach YouTube and YouTube Music modules from the Play Store
   
 CLI: MorpheApp/morphe-cli-1.9.1-all.jar  
-Patches: MorpheApp/patches-1.32.0.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.32.0)  
+Patches: MorpheApp/patches-1.33.0.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.33.0)  
