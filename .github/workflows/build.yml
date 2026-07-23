@@ -19,6 +19,9 @@ jobs:
           distribution: "zulu"
           java-version: "21"
 
+      - name: Export Java home
+        run: echo "JAVA_HOME=$JAVA_HOME" >> $GITHUB_ENV
+
       - name: Checkout
         uses: actions/checkout@v6
         with:
@@ -106,9 +109,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-      
+       
           git add build.md *-update.json
-      
+       
           if ! git diff --cached --quiet; then
             git commit -s -m "Bump version ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}"
             git push origin HEAD:update
