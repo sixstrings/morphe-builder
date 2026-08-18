@@ -3,7 +3,7 @@ parallel-jobs = 1
 
 # ReVanced
 [GooglePhotos]
-enabled = true
+enabled = false
 build-mode = "both"
 arch = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
