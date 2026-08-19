@@ -1,9 +1,9 @@
 enable-module-update = true
 parallel-jobs = 1
 
-# ReVanced
+# DeVanced
 [GooglePhotos]
-enabled = false
+enabled = true
 build-mode = "both"
 arch = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
