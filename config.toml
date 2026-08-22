@@ -3,13 +3,11 @@ parallel-jobs = 1
 
 # DeVanced
 [GooglePhotos]
-enabled = true
 build-mode = "both"
-arch = "both"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
-# uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.photos"
 patches-source = "RookieEnough/De-Vanced"
+cli-source = "MorpheApp/morphe-cli"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.photos"
 
 # Morphe
 [YouTube-Morphe]
