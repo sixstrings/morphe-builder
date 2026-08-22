@@ -1,6 +1,6 @@
 {
-  "version": "7.66.0.876414181 (patches 5.50.2.rvp)",
-  "versionCode": 17,
-  "zipUrl": "https://github.com/sixstrings/morphe-revanced-builder/releases/download/17/photos-revanced-module-v7.66.0.876414181-arm64-v8a.zip",
-  "changelog": "https://raw.githubusercontent.com/sixstrings/morphe-revanced-builder/update/build.md"
+  "version": "7.89.0.968035987 (patches 1.2.2.mpp)",
+  "versionCode": 67,
+  "zipUrl": "https://github.com/sixstrings/morphe-builder/releases/download/67/googlephotos-revanced-module-v7.89.0.968035987-all.zip",
+  "changelog": "https://raw.githubusercontent.com/sixstrings/morphe-builder/update/build.md"
 }
