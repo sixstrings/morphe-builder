@@ -24,8 +24,8 @@ build-mode = "both"
 
 [YT-Music-Morphe]
 app-name = "YT Music"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 direct-dlurl = "https://github.com/peternmuller/YTYTM-APK/releases/download/1/com.google.android.apps.youtube.music-9.15.51-arm64-v8a.apk"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
