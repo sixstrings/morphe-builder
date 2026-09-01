@@ -3,6 +3,7 @@ parallel-jobs = 1
 
 # DeVanced
 [GooglePhotos]
+enabled = "false" 
 build-mode = "both"
 patches-source = "RookieEnough/De-Vanced"
 cli-source = "MorpheApp/morphe-cli"
