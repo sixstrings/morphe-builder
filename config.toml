@@ -13,8 +13,8 @@ archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.a
 # Morphe
 [YouTube-Morphe]
 app-name = "YouTube"
+direct-dlurl = "https://github.com/peternmuller/YTYTM-APK/releases/download/1/com.google.android.youtube-21.07.247-all.apk"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-direct-dlurl = "https://github.com/sixstrings/YTYTM-APK/releases/download/1/com.google.android.youtube-21.07.247-all.apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 patches-source = "MorpheApp/morphe-patches"
