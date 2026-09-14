@@ -12,8 +12,7 @@ This Morphe builder creates [Magisk](https://github.com/topjohnwu/Magisk)/[Kerne
 for [Morphe](https://github.com/MorpheApp) patched versions of YouTube, YouTube Music, Reddit and Google Photos.
 
 ### ⚠️ Do NOT download modules and APKs from random shady websites you find on Google!  
-Use this [GitHub](https://github.com/sixstrings/morphe-builder)
-repository or this [Telegram channel](https://t.me/morphe_modules_apks) as sources!
+Use this [GitHub](https://github.com/sixstrings/morphe-builder) repository or this [Telegram channel](https://t.me/morphe_modules_apks) as your sources!
 
 
 #### **Get the latest CI release [here](https://github.com/sixstrings/morphe-builder/releases/latest).**
