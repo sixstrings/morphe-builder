@@ -8,8 +8,13 @@
 <a href="https://paypal.me/holguitar" target="_blank"><img src="https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png" height="40" style="height:40px; border-radius:8px; display:inline-block; margin-top:8px;" alt="Donate via PayPal" /></a>
 
 
-This Morphe builder creates [Magisk](https://github.com/topjohnwu/Magisk)/[KernelSU](https://github.com/tiann/KernelSU) modules but also apks
-for [Morphe](https://github.com/MorpheApp) versions of YouTube, YouTube Music and Reddit atm.
+This Morphe builder creates [Magisk](https://github.com/topjohnwu/Magisk)/[KernelSU](https://github.com/tiann/KernelSU) modules and APKs 
+for [Morphe](https://github.com/MorpheApp) patched versions of YouTube, YouTube Music, Reddit and Google Photos.
+
+### ⚠️ Do NOT download modules and APKs from random shady websites you find on Google!  
+Use this [GitHub](https://github.com/sixstrings/morphe-builder)
+repository or this [Telegram channel](https://t.me/morphe_modules_apks) as sources!
+
 
 #### **Get the latest CI release [here](https://github.com/sixstrings/morphe-builder/releases/latest).**
 
