@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./logo.png" width="300">
+</p>
+
 # Extensive Morphe Builder
 [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/morphe_modules_apks)
 [![CI](https://github.com/sixstrings/morphe-builder/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/sixstrings/morphe-builder/actions/workflows/ci.yml)
