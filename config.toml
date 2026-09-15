@@ -23,6 +23,7 @@ patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
 rv-brand = "Morphe"
 build-mode = "both"
+patcher-args = "-e 'Custom branding' -OappIcon=original"
 
 [YT-Music-Morphe]
 enabled = "true"
@@ -35,6 +36,7 @@ cli-source = "MorpheApp/morphe-cli"
 rv-brand = "Morphe"
 arch = "arm64-v8a"
 build-mode = "both"
+patcher-args = "-e 'Custom branding' -OappIcon=original"
 
 [Reddit-Morphe]
 enabled = "true"
