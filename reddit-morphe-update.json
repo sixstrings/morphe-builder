@@ -1,6 +1,6 @@
 {
-  "version": "2026.24.0 (patches 1.47.0.mpp)",
-  "versionCode": 82,
-  "zipUrl": "https://github.com/sixstrings/morphe-builder/releases/download/82/reddit-morphe-module-v2026.24.0-all.zip",
+  "version": "2026.24.0 (patches 1.48.0.mpp)",
+  "versionCode": 83,
+  "zipUrl": "https://github.com/sixstrings/morphe-builder/releases/download/83/reddit-morphe-module-v2026.24.0-all.zip",
   "changelog": "https://raw.githubusercontent.com/sixstrings/morphe-builder/update/build.md"
 }
