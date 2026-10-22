@@ -47,6 +47,11 @@ jobs:
           if [ -z "$TAG" ]; then TAG=0; fi
           echo "NEXT_VER_CODE=$((TAG + 1))" >> $GITHUB_OUTPUT
 
+      - name: Clean Morphe build cache
+        run: |
+          rm -rf temp
+          mkdir -p temp
+
       - name: Build modules/APKs
         run: if [ -f "config.json" ]; then ./build.sh config.json; else ./build.sh config.toml; fi
         env:
@@ -62,7 +67,7 @@ jobs:
           cat build.md >> "$GITHUB_OUTPUT"
           echo "${DELIM}" >> "$GITHUB_OUTPUT"
           cp -f build.md build.tmp
-      
+
       - name: Upload release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -109,9 +114,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-       
+
           git add build.md *-update.json
-       
+
           if ! git diff --cached --quiet; then
             git commit -s -m "Bump version ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}"
             git push origin HEAD:update
@@ -119,7 +124,6 @@ jobs:
             echo "no changes!"
           fi
 
-    
       - name: Report to Telegram
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
@@ -161,8 +165,6 @@ jobs:
           APKS="${APKS#"$'\n'"}"
           MODULES="${MODULES#"$'\n'"}"
 
-          
-        
           BODY="$(
             sed \
               -e 's/^\* \*\*/↪ \*\*/g' \
@@ -175,7 +177,6 @@ jobs:
               -e '/^==/d' \
               ../build.md
           )"
-          
 
           MSG="🚀 *New Build Released*
 
@@ -202,7 +203,3 @@ jobs:
             --data-urlencode "disable_web_page_preview=true"
 
           echo "✅ Telegram message sent"
-          
-
-            
-
