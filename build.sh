@@ -160,7 +160,7 @@ if [ -z "$(ls -A1 "${BUILD_DIR}")" ]; then abort "All builds failed."; fi
 
 log "\nInstall [Morphe MicroG-RE](https://github.com/MorpheApp/MicroG-RE/releases/latest) for non-root YouTube, YouTube Music and Reddit APKs"
 log "Use [zygisk-detach](https://github.com/j-hc/zygisk-detach/releases/latest) to detach YouTube and YouTube Music modules from the Play Store\n"
-log "$(cat "$TEMP_DIR"/*/changelog.md)"
+log "$(cat "$TEMP_DIR"/*/changelog.md 2>/dev/null | awk '!seen[$0]++')"
 
 SKIPPED=$(cat "$TEMP_DIR"/skipped 2>/dev/null || :)
 if [ -n "$SKIPPED" ]; then
