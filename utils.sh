@@ -120,7 +120,7 @@ get_prebuilts() {
 			file="${dir}/${name}"
 			gh_dl "$file" "$url" >&2 || return 1
 			line="$tag: $(cut -d/ -f1 <<<"$src")/${name}"
-+			grep -Fxq "$line" "${cl_dir}/changelog.md" || echo "$line" >>"${cl_dir}/changelog.md"
+     		grep -Fxq "$line" "${cl_dir}/changelog.md" || echo "$line" >>"${cl_dir}/changelog.md"
 		else
 			grab_cl=false
 			name=$(basename "$file")
