@@ -1,3 +1,5 @@
+Reddit-Morphe: 2026.40.0  
+YT-Music-Morphe: 9.30.53  
 YouTube-Morphe: 21.30.216  
 
 Install [Morphe MicroG-RE](https://github.com/MorpheApp/MicroG-RE/releases/latest) for non-root YouTube, YouTube Music and Reddit APKs  
