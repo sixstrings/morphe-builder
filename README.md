@@ -19,7 +19,7 @@ with [Morphe](https://github.com/MorpheApp) patches for YouTube, YouTube Music, 
 #### ⚠️ 
 Do NOT download modules or APKs from random, shady websites you find on Google!
 
-Use this [GitHub](https://github.com/sixstrings/morphe-builder) repository or this [Telegram channel](https://t.me/morphe_modules_apks) as your sources!
+Use known GitHub repositories to build your application from official sources or use open source builders like this one or the related [Telegram channel](https://t.me/morphe_modules_apks) to get your pre built releases.
 
 
 #### **Get the latest CI release [here](https://github.com/sixstrings/morphe-builder/releases/latest).**
