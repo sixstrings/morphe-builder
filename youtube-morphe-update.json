@@ -1,6 +1,6 @@
 {
-  "version": "21.30.216 (patches 2.3.0.mpp)",
-  "versionCode": 89,
-  "zipUrl": "https://github.com/sixstrings/morphe-builder/releases/download/89/youtube-morphe-module-v21.30.216-all.zip",
+  "version": "21.30.216 (patches 2.4.0.mpp)",
+  "versionCode": 90,
+  "zipUrl": "https://github.com/sixstrings/morphe-builder/releases/download/90/youtube-morphe-module-v21.30.216-all.zip",
   "changelog": "https://raw.githubusercontent.com/sixstrings/morphe-builder/update/build.md"
 }
