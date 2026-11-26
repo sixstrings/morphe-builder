@@ -3,7 +3,7 @@
 </p>
 
 # Extensive Morphe Builder
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/morphe_modules_apks)
+[![Channel](https://img.shields.io/badge/Follow-Telegram-blue.svg?logo=telegram)](https://t.me/morphe_modules_apks)
 [![CI](https://github.com/sixstrings/morphe-builder/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/sixstrings/morphe-builder/actions/workflows/ci.yml)
 [![GitHub Release Date](https://img.shields.io/github/release-date/sixstrings/morphe-builder?label=Release%20Date&color=blue&style=flat)](https://github.com/sixstrings/morphe-builder/releases)
 [![GitHub License](https://img.shields.io/github/license/sixstrings/morphe-builder?logo=gnu&label=License&link=https%3A%2F%2Fgithub.com%2Fsixstrings%2Fmorphe-builder%2Fblob%2Fmain%2FLICENSE)](https://github.com/sixstrings/morphe-builder/blob/main/LICENSE)
